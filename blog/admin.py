@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import category , comment, post    
+from .models import Category , Comment, Post    
 # Register your models here.
 class category_admin(admin.ModelAdmin):
     pass
@@ -8,6 +8,6 @@ class comment_admin(admin.ModelAdmin):
 class post_admin(admin.ModelAdmin):
     pass
  
-admin.site.register(category,category_admin)
-admin.site.register(comment,comment_admin)
-admin.site.register(post,post_admin)
+admin.site.register(Category,category_admin)
+admin.site.register(Comment,comment_admin)
+admin.site.register(Post,post_admin)
